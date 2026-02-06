@@ -1,3 +1,1 @@
-FROM docker.io/julesg/underworld3:0.99
-
-
+FROM ghcr.io/julesghub/underworld2:v2.17.1

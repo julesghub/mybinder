@@ -1,5 +1,0 @@
-tqdm
-hypothesis
-rtree
-lxml
-pyct
