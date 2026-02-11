@@ -1,0 +1,6 @@
+#!/bin/bash -v
+
+# for binder we run as uid=1000
+# So copy files from $MAMBA_USER account and start in /home/$USER
+cp -r /home/$MAMBA_USER/* /home/$USER
+cd /home/$USER
