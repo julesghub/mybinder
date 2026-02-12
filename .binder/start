@@ -1,7 +1,7 @@
 #!/bin/bash -v
 
-# for binder we run as uid=1000 so make everything in directory world readable
-chmod -R 777 /home/$MAMBA_USER
+# for binder we run as uid=1000 so change the owner of directory
+chown 1000:1000 -R /home/$MAMBA_USER
 
 # mandatory for start file
 # see https://repo2docker.readthedocs.io/en/latest/configuration/actions/#start-run-code-before-the-user-sessions-starts
