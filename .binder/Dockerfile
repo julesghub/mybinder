@@ -3,7 +3,7 @@ FROM ghcr.io/julesghub/underworld2:v2.17.1-lite
 
 # Adjust binder user permissions
 # taken from https://micromamba-docker.readthedocs.io/en/latest/advanced_usage.html#changing-the-user-id-or-name
-ARG NEW_MAMBA_USER=new-username
+ARG NEW_MAMBA_USER=jovyan
 ARG NEW_MAMBA_USER_ID=1000
 ARG NEW_MAMBA_USER_GID=1000
 USER root
@@ -26,3 +26,6 @@ RUN if grep -q '^ID=alpine$' /etc/os-release; then \
     :
 ENV MAMBA_USER=$NEW_MAMBA_USER
 USER $MAMBA_USER
+
+
+WORKDIR /home/${MAMBA_USER}
