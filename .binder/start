@@ -1,7 +1,4 @@
 #!/bin/bash -v
 
-# for binder we run as uid=1000
-# So copy files from $MAMBA_USER account and start in /home/$USER
-mkdir -p /home/$USER/
-cp -r /home/$MAMBA_USER/* /home/$USER
-cd /home/$USER
+# for binder we run as uid=1000 so make everything in directory world readable
+chmod -R 777 /home/$MAMBA_USER
