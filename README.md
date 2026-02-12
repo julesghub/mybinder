@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/julesghub/mybinder.git/uw2)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/julesghub/mybinder/uw2-lite)
 
 Binder for UW2.
 
